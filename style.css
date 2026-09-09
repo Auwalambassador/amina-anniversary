@@ -1,1 +1,214 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a001f, #4b164c, #180018);
+    color: white;
+    overflow-x: hidden;
+}
+
+.screen {
+    min-height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.screen.active {
+    display: flex;
+    animation: fadeIn 0.8s ease;
+}
+
+.card {
+    width: 100%;
+    max-width: 550px;
+    padding: 40px 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.small-text {
+    font-size: 14px;
+    letter-spacing: 2px;
+    opacity: 0.75;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.intro,
+p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.emoji {
+    display: block;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.big-heart {
+    display: block;
+    font-size: 75px;
+    animation: heartbeat 1.4s infinite;
+    margin-bottom: 15px;
+}
+
+button {
+    border: none;
+    padding: 15px 25px;
+    margin-top: 15px;
+    border-radius: 30px;
+    background: white;
+    color: #4b164c;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+.prayer {
+    font-style: italic;
+}
+
+.amen {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+.question-number {
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.question-box {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: inherit;
+    margin-bottom: 10px;
+}
+
+.final-message {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.signature {
+    margin-top: 30px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.hearts::before,
+.hearts::after {
+    content: "❤️  ✨  🤍  💕  ✨  ❤️";
+    position: fixed;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    font-size: 20px;
+    word-spacing: 30px;
+    animation: falling 12s linear infinite;
+    pointer-events: none;
+    opacity: 0.25;
+}
+
+.hearts::after {
+    animation-delay: 6s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+@keyframes falling {
+    from {
+        transform: translateY(-50px);
+    }
+
+    to {
+        transform: translateY(110vh);
+    }
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    .card {
+        padding: 35px 20px;
+    }
+
+    .intro,
+    p {
+        font-size: 16px;
+    }
+}
+```
