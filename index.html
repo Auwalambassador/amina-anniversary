@@ -1,1 +1,177 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Amina ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <div class="hearts"></div>
+
+    <!-- Welcome Section -->
+    <section class="screen active" id="welcome">
+        <div class="card">
+            <p class="small-text">A little surprise for you...</p>
+
+            <h1>For Amina ❤️</h1>
+
+            <p class="intro">
+                One month may sound like a short time,
+                but sometimes a short time is enough for
+                someone to become special.
+            </p>
+
+            <button onclick="showSection('message')">
+                Open Your Surprise ✨
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Message Section -->
+    <section class="screen" id="message">
+        <div class="card">
+            <span class="emoji">💌</span>
+
+            <h2>Happy One Month, Baby ❤️</h2>
+
+            <p>
+                Amina, today marks one month since our friendship
+                began, and I just wanted to create something special
+                for you.
+            </p>
+
+            <p>
+                In just one month, we've shared conversations,
+                laughter, random moments and memories that I
+                genuinely appreciate.
+            </p>
+
+            <p>
+                I don't know what the future holds, but I'm grateful
+                that our paths crossed. And honestly, I'm happy
+                to call you my friend.
+            </p>
+
+            <button onclick="showSection('prayer')">
+                A Prayer For You 🤲
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Prayer Section -->
+    <section class="screen" id="prayer">
+        <div class="card">
+            <span class="emoji">🤲</span>
+
+            <h2>A Little Prayer For You</h2>
+
+            <p class="prayer">
+                May Allah bless your life with happiness,
+                protect your heart from sadness, and grant
+                you everything that is good for you.
+            </p>
+
+            <p class="prayer">
+                May He make your difficult days easy,
+                your dreams possible, your heart peaceful,
+                and your future beautiful.
+            </p>
+
+            <p class="prayer">
+                And may Allah bless this friendship with
+                goodness, sincerity, respect and beautiful
+                memories.
+            </p>
+
+            <p class="amen">Ameen 🤍</p>
+
+            <button onclick="showSection('questions')">
+                Now It's Your Turn 👀
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Questions Section -->
+    <section class="screen" id="questions">
+        <div class="card">
+
+            <span class="emoji">👀</span>
+
+            <h2>Let's See What You Think</h2>
+
+            <p class="question-number" id="questionNumber">
+                Question 1 of 4
+            </p>
+
+            <div class="question-box">
+
+                <h3 id="questionText">
+                    What was your first impression of me?
+                </h3>
+
+                <textarea
+                    id="answer"
+                    placeholder="Be honest... 😂❤️"
+                ></textarea>
+
+                <button onclick="nextQuestion()">
+                    Next →
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Final Section -->
+    <section class="screen" id="final">
+        <div class="card final-card">
+
+            <span class="big-heart">❤️</span>
+
+            <h2>Thank You, Amina</h2>
+
+            <p>
+                Whatever your answers were, I hope you know
+                that I genuinely appreciate having you in my life.
+            </p>
+
+            <p>
+                One month down... and hopefully many more beautiful
+                memories ahead. 🫂
+            </p>
+
+            <p class="final-message">
+                Happy One Month Anniversary, Baby. ❤️
+            </p>
+
+            <p>
+                May Allah continue to guide us, protect us,
+                and keep beautiful people around us.
+            </p>
+
+            <div class="signature">
+                — From someone who appreciates you ❤️
+            </div>
+
+            <button onclick="showSection('welcome')">
+                Replay 🔄
+            </button>
+
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
